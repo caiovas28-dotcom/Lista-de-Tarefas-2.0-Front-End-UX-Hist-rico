@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"> 
+    <title>Lista de Tarefas 2.0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="container"> 
+
+    <h1>Lista de Tarefas 2.0</h1> 
+
+    <div id="main">
+
+        <!-- Card de Tarefas -->
+        <div id="tarefas"> 
+
+            <!-- Barra de dias da semana -->
+            <div id="diasSemana">
+                <button class="dia" data-dia="Seg">Seg</button>
+                <button class="dia" data-dia="Ter">Ter</button>
+                <button class="dia" data-dia="Qua">Qua</button>
+                <button class="dia" data-dia="Qui">Qui</button>
+                <button class="dia" data-dia="Sex">Sex</button>
+                <button class="dia" data-dia="Sáb">Sáb</button>
+                <button class="dia" data-dia="Dom">Dom</button>
+            </div>
+
+            <input type="text" id="novaTarefa" placeholder="Digite uma tarefa"> 
+            <button id="btnAdicionar">Adicionar</button>
+
+            <!-- Lista de tarefas do dia -->
+            <div id="listaTarefas"></div>
+
+            <!-- Histórico -->
+            <button id="btnHistorico">Ver Histórico</button>
+            <div id="historico" style="display:none;"></div>
+
+        </div>
+
+        <!-- Card de Compromissos -->
+        <div id="compromissos"> 
+            <h3>Compromisso</h3>
+            <div class="inputs">
+                <input type="text" id="nomeCompromisso" placeholder="Nome">
+                <input type="date" id="dataCompromisso">
+                <input type="time" id="horaCompromisso">
+            </div>
+            <button id="btnAdicionarCompromisso">Adicionar</button>
+
+            <div id="listaCompromissos"></div>
+        </div>
+
+    </div> <!-- #main -->
+
+</div> <!-- #container -->
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: #e0e0e0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#main {
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+/* Card Tarefas */
+#tarefas {
+    flex: 0 0 350px;
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #00ff88;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#diasSemana {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+#diasSemana .dia {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #262626;
+    color: white;
+}
+
+#diasSemana .dia.active {
+    background-color: #00ff88;
+    color: black;
+}
+
+#tarefas input[type="text"] {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #2b2b2b;
+    color: white;
+}
+
+#tarefas button {
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background-color: #00ff88;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+#listaTarefas div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+    border-bottom: 1px solid #00ff88;
+}
+
+#listaTarefas span {
+    margin-left: 8px;
+    flex: 1;
+}
+
+#listaTarefas button {
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+#listaTarefas button:hover {
+    background-color: darkgray;
+}
+
+#listaTarefas input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #00ff88;
+}
+
+/* Histórico */
+#historico {
+    margin-top: 10px;
+    background-color: #262626;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+/* Card Compromissos */
+#compromissos {
+    position: absolute;
+    right: 0;
+    top: 0;
+    flex: 0 0 300px;
+    background-color: #1c1c1c;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #00ff88;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#compromissos .inputs {
+    display: flex;
+    gap: 5px;
+}
+
+#compromissos input {
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: #2b2b2b;
+    color: white;
+    font-size: 14px;
+}
+
+#compromissos button {
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: #00ff88;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+#listaCompromissos div {
+    background-color: #262626;
+    padding: 6px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#listaCompromissos span {
+    font-size: 14px;
+}
